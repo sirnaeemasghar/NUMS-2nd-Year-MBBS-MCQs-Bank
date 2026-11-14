@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NUMS 2nd Year MCQs (Proff 2025, Preproff 2025, 2026) - Clinical Scenario Edition</title>
+  <meta name="description" content="Local interactive study portal for NUMS 2nd Year MBBS MCQs. Covering Block 4 (GIT, Renal, Metabolism) & Block 5 (Neurosciences & Genetics) with instant answers and explanations.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="top-navbar">
+    <div class="nav-left">
+      <a href="#" class="brand-badge">
+        <div class="brand-icon">🩺</div>
+        <span>NUMS Nexus</span>
+      </a>
+      <nav class="nav-breadcrumbs" id="breadcrumbs">
+        <span class="active">Home</span>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <button class="icon-btn" id="db-manager-btn" title="Database & Backup Manager">
+        <span>💾</span>
+        <span>Database & Backup</span>
+      </button>
+      <button class="theme-btn" id="theme-toggle-btn" title="Toggle Light/Dark Theme">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- ========================================== -->
+    <!-- 1. HOME VIEW (Hero + 3 Blocks in Middle)    -->
+    <!-- ========================================== -->
+    <section class="view-panel active" id="home-view">
+      <div class="home-hero">
+        <div class="hero-pill">
+          <span>✨ NUMS Nexus 2026 Edition • Clinical Scenario Bank</span>
+        </div>
+        <h1 class="home-title">
+          NUMS 2nd Year MCQs<br>(Proff 2025, Preproff 2025, 2026)
+        </h1>
+        <p class="home-subtitle">
+          Comprehensive preparation portal for 2nd Year MBBS. Practice topic-wise clinical scenarios from all Army Medical Colleges with instant feedback, verified answers, and high-yield Exam Pearls.
+        </p>
+
+        <!-- The Three Middle Boxes -->
+        <div class="blocks-grid">
+          <!-- 1. Block 4 (Active) -->
+          <div class="block-card active-card" onclick="window.location.hash='#block4'">
+            <div class="card-top">
+              <span class="block-num-badge blue">Block 4</span>
+              <span class="card-status status-active">● Active & Ready</span>
+            </div>
+            <h2 class="block-name">Block 4</h2>
+            <p class="block-desc">
+              GIT & Metabolism I + Genitourinary System. Abdominal wall, viscera, renal clearance, acid-base & metabolic integration.
+            </p>
+            <div class="block-stats-row">
+              <div class="stat-item">
+                <span class="stat-num">699</span>
+                <span class="stat-label">MCQs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">42</span>
+                <span class="stat-label">Topics</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Subjects</span>
+              </div>
+            </div>
+            <div id="home-b4-progress-pill" style="margin-bottom: 0.75rem;"></div>
+            <button class="block-card-btn">
+              <span>Open Block 4</span>
+              <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- 2. Block 5 (Active!) -->
+          <div class="block-card active-card" onclick="window.location.hash='#block5'">
+            <div class="card-top">
+              <span class="block-num-badge blue">Block 5</span>
+              <span class="card-status status-active">● Active & Ready</span>
+            </div>
+            <h2 class="block-name">Block 5</h2>
+            <p class="block-desc">
+              Neurosciences I & Genetics. Neuroanatomy, spinal cord, tracts, motor cortex, neurotransmitters, nucleotide metabolism & genetics.
+            </p>
+            <div class="block-stats-row">
+              <div class="stat-item">
+                <span class="stat-num">707</span>
+                <span class="stat-label">MCQs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">36</span>
+                <span class="stat-label">Topics</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Subjects</span>
+              </div>
+            </div>
+            <div id="home-b5-progress-pill" style="margin-bottom: 0.75rem;"></div>
+            <button class="block-card-btn">
+              <span>Open Block 5</span>
+              <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- 3. Block 6 (Active & Ready!) -->
+          <div class="block-card active-card" onclick="window.location.hash='#block6'">
+            <div class="card-top">
+              <span class="block-num-badge blue">Block 6</span>
+              <span class="card-status status-active">● Active & Ready</span>
+            </div>
+            <h2 class="block-name">Block 6</h2>
+            <p class="block-desc">
+              Maxillofacial & Special Senses + Endocrinology. Head & neck, cranial nerves, eye, ear, taste/smell, endocrine regulation & reproductive physiology.
+            </p>
+            <div class="block-stats-row">
+              <div class="stat-item">
+                <span class="stat-num">604</span>
+                <span class="stat-label">MCQs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">30</span>
+                <span class="stat-label">Topics</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Subjects</span>
+              </div>
+            </div>
+            <div id="home-b6-progress-pill" style="margin-bottom: 0.75rem;"></div>
+            <button class="block-card-btn">
+              <span>Open Block 6</span>
+              <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extra Features Strip -->
+        <div class="features-strip">
+          <div class="feature-box">
+            <div class="feature-icon">⚡</div>
+            <div>
+              <div class="feature-title">Immediate Learning Mode</div>
+              <div class="feature-text">Select any option to instantly see if it's correct, view the right answer, and read the Exam Pearl.</div>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">📑</div>
+            <div>
+              <div class="feature-title">2,010 Verified NUMS MCQs</div>
+              <div class="feature-text">Complete Blocks 4, 5 & 6 mapped across Anatomy, Physiology, and Biochemistry from NUMS Prof & Send-up papers.</div>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">💾</div>
+            <div>
+              <div class="feature-title">Dual-Layer Local Database</div>
+              <div class="feature-text">All attempts and bookmarks are dual-persisted to IndexedDB & LocalStorage with full JSON backup & restore.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 2. COMING SOON VIEW (Block 6)              -->
+    <!-- ========================================== -->
+    <section class="view-panel" id="coming-soon-view">
+      <div class="coming-soon-container">
+        <div class="coming-soon-icon">⏳</div>
+        <h2 class="coming-soon-title" id="coming-soon-title">Block 6 - Coming Soon</h2>
+        <p class="coming-soon-desc" id="coming-soon-desc">
+          Block 6 covers Head & Neck, Special Senses (Eye, Ear), and Endocrine/Reproductive System. The questions are currently being verified and will be added here soon!
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#block4" class="btn-primary">
+            <span>Go to Block 4</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="#block5" class="btn-primary" style="background: #059669;">
+            <span>Go to Block 5</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="#" class="back-btn" style="padding: 0.75rem 1.25rem;">
+            <span>&larr; Back to Home</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 3. DYNAMIC BLOCK DASHBOARD (Block 4 & 5)   -->
+    <!-- ========================================== -->
+    <section class="view-panel" id="block-dashboard-view">
+      <!-- Block Header & Stats Card -->
+      <div class="block-header-card">
+        <div class="block-title-area">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem;">
+            <a href="#" class="back-btn" style="font-size: 0.8rem; padding: 0.25rem 0.6rem;">&larr; Home</a>
+            <span class="hero-pill" style="margin-bottom: 0;" id="block-syllabus-tag">NUMS Syllabus 2026</span>
+          </div>
+          <h1 id="block-main-title">Block Overview</h1>
+          <p class="block-subtitle" id="block-main-desc">
+            Clinical Scenario MCQs from NUMS Prof & Send-up papers.
+          </p>
+        </div>
+
+        <div class="block-overall-progress">
+          <div class="progress-circle-stat">
+            <span class="progress-pct" id="block-overall-pct">0%</span>
+            <span class="progress-subtext" id="block-overall-subtext">0 answered</span>
+          </div>
+          <button class="icon-btn" onclick="window.resetCurrentBlockProgress()" title="Reset all answers in this Block">
+            🔄 Reset
+          </button>
+        </div>
+      </div>
+
+      <!-- Subject Filter Tabs -->
+      <div class="subject-nav-tabs" id="subject-tabs-container">
+        <!-- Generated dynamically based on active block -->
+      </div>
+
+      <!-- Subject Sections Container -->
+      <div id="subject-sections-container">
+        <!-- Generated dynamically based on active block -->
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- 4. TOPIC MCQs SCROLLABLE VIEW              -->
+    <!-- ========================================== -->
+    <section class="view-panel" id="topic-view">
+      <!-- Sticky Control Header -->
+      <div class="topic-sticky-bar">
+        <div class="sticky-top-row">
+          <div class="sticky-left">
+            <button class="back-btn" id="topic-back-btn">
+              <span>&larr;</span>
+              <span id="topic-back-label">Block Topics</span>
+            </button>
+            <span class="topic-subject-badge" id="topic-subject-badge">Anatomy</span>
+            <h2 class="current-topic-title" id="current-topic-title">Topic Title</h2>
+          </div>
+
+          <div class="sticky-stats-pill" id="topic-stats-pill">
+            <span>Answered: <strong class="stat-pill-val">0/0</strong></span>
+            <span>•</span>
+            <span>Score: <strong class="stat-pill-val">0/0 (0%)</strong></span>
+          </div>
+        </div>
+
+        <div class="sticky-controls-row">
+          <div class="filter-pills-group">
+            <button class="filter-pill active" data-filter="all">All</button>
+            <button class="filter-pill" data-filter="unattempted">Unanswered</button>
+            <button class="filter-pill" data-filter="wrong">Wrong (Review)</button>
+            <button class="filter-pill" data-filter="correct">Correct</button>
+            <button class="filter-pill" data-filter="bookmarked">★ Bookmarked</button>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <div class="search-box-wrap">
+              <span class="search-icon">🔍</span>
+              <input type="text" class="search-input" id="topic-search-input" placeholder="Search MCQs, tags, pearls...">
+            </div>
+            <button class="icon-btn" onclick="window.resetCurrentTopicProgress()" title="Reset this topic's answers">
+              🔄 Reset Topic
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrollable List of All MCQs in This Topic -->
+      <div id="mcqs-list-container">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Bottom Topic Navigation -->
+      <div class="topic-bottom-nav">
+        <button class="back-btn" id="prev-topic-btn">
+          &larr; Previous Topic
+        </button>
+
+        <button class="scroll-top-btn" id="scroll-top-btn">
+          <span>&uarr; Back to Top</span>
+        </button>
+
+        <button class="btn-primary" id="next-topic-btn">
+          Next Topic &rarr;
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>
+      <strong>NUMS 2nd Year MBBS MCQs Portal</strong> • Sources: Send-up 2025, Send-up 2026 (AMC, CMH Lahore, CKMC Kharian, CIMS Multan, WMC, HITEC, CIMS Bahawalpur, QIMS, KIMS), NUMS Prof 2024 & Prof 2025.
+    </p>
+    <p style="margin-top: 0.35rem; color: var(--text-light); font-size: 0.8rem;">
+      Clinical Scenario Edition • Curated with verified keys and high-yield Exam Pearls.
+    </p>
+  </footer>
+
+  <!-- Database & Backup Manager Modal -->
+  <div class="modal-backdrop" id="db-modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>💾 Local Database & Backup Center</h3>
+        <button class="modal-close-btn" id="db-modal-close-btn" title="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Status Banner -->
+        <div class="db-status-banner">
+          <div class="db-status-icon">🛡️</div>
+          <div class="db-status-text">
+            <h4>Dual-Layer Storage Active (IndexedDB + LocalStorage)</h4>
+            <p>Your answers and bookmarks are safely saved locally on your device across both IndexedDB and LocalStorage with zero data loss.</p>
+          </div>
+        </div>
+
+        <!-- Progress Overview Grid -->
+        <div>
+          <div style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+            Current Saved Data
+          </div>
+          <div class="db-stats-grid">
+            <div class="db-block-stat-card">
+              <div class="db-block-stat-title">Block 4</div>
+              <div class="db-block-stat-num" id="db-stat-b4-ans">0</div>
+              <div class="db-block-stat-sub">answered • <span id="db-stat-b4-bk">0</span> saved ★</div>
+            </div>
+            <div class="db-block-stat-card">
+              <div class="db-block-stat-title">Block 5</div>
+              <div class="db-block-stat-num" id="db-stat-b5-ans">0</div>
+              <div class="db-block-stat-sub">answered • <span id="db-stat-b5-bk">0</span> saved ★</div>
+            </div>
+            <div class="db-block-stat-card">
+              <div class="db-block-stat-title">Block 6</div>
+              <div class="db-block-stat-num" id="db-stat-b6-ans">0</div>
+              <div class="db-block-stat-sub">answered • <span id="db-stat-b6-bk">0</span> saved ★</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Export & Backup Actions -->
+        <div class="db-actions-section">
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+            Backup & Transfer
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">
+            Download a complete offline copy of your bookmarks, attempts, and scores. You can restore this file anytime on any computer or browser.
+          </p>
+          <div class="db-action-btn-row">
+            <button class="db-btn db-btn-export" id="db-export-btn">
+              <span>📥 Export Progress (JSON)</span>
+            </button>
+            <button class="db-btn db-btn-import" id="db-copy-btn" title="Copy backup JSON to clipboard">
+              <span>📋 Copy to Clipboard</span>
+            </button>
+            <label class="db-btn db-btn-import" for="db-import-file-input" style="margin: 0; text-align: center;">
+              <span>📤 Restore from Backup</span>
+              <input type="file" id="db-import-file-input" accept=".json,application/json,text/plain,text/*,*/*" style="display: none;">
+            </label>
+          </div>
+        </div>
+
+        <!-- Safety Rollback Action -->
+        <div class="db-actions-section" id="db-undo-section" style="display: none;">
+          <div style="font-size: 0.85rem; font-weight: 700; color: #ea580c; text-transform: uppercase; letter-spacing: 0.5px;">
+            Accidental Reset Protection
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">
+            A snapshot was saved before your last reset. Click below if you want to undo your reset.
+          </p>
+          <div class="db-action-btn-row">
+            <button class="db-btn db-btn-undo" id="db-undo-reset-btn">
+              <span>↩️ Undo Last Reset</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" id="db-modal-done-btn" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="app-toast">
+    <span id="toast-icon">✅</span>
+    <span id="toast-msg">Database synchronized successfully!</span>
+  </div>
+
+  <!-- Load Data and Application Logic -->
+  <script src="preset_data.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

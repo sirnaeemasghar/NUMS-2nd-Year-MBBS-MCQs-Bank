@@ -1,0 +1,19 @@
+# Personal Progress & Backups
+NUMS_MBBS_Progress_Backup_*.json
+user_progress.json
+
+# Large Raw Source PDFs (45MB+ each)
+NUMS_Nexus_Block_4_MCQs.pdf
+NUMS_Nexus_Block_5_MCQs.pdf
+NUMS_Nexus_Block_6_MCQs.pdf
+
+# Android build cache & temporary files
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+*.idsig
+
+# System & OS
+.DS_Store
+Thumbs.db
